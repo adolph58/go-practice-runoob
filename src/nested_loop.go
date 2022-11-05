@@ -7,14 +7,14 @@ func main() {
 	var i, j int
 
 	for i = 2; i < 100; i++ {
-		for j = 2; j <= (i / j); j++ {
+		for j = 2; j <= (i/j); j++ {
 			fmt.Printf("i = %d, j = %d\n", i, j)
 			if i%j == 0 {
 				fmt.Println("break")
 				break // 如果发现因子，则不是素数
 			}
 		}
-		if j > (i / j) {
+		if j > (i/j) {
 			fmt.Printf("%d 是素数\n", i)
 		}
 	}
