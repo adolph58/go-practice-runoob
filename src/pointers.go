@@ -15,4 +15,10 @@ func main() {
 
 	/* 使用指针访问值 */
 	fmt.Printf("*ip 变量的值：%d\n", *ip)
+
+
+	str := "Golang"
+	var p *string = &str // p 是指向 str 的指针
+	*p = "Hello"
+	fmt.Println(str) // Hello 修改了 p，str 的值也发生了改变
 }
